@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <link rel="stylesheet" type="text/css" href="css/estilos.css">
+    <script src="js/form3.js"></script>
+</head>
+<header>
+    <div=id="nav_bar">
+        <nav>
+            <ul>
+                <li><a href="index.html">INICIO</a></li>
+                <li><a href="#">EMPRESA</a></li>
+                <li><a href="#">PRODUCTOS</a></li>
+                <li><a href="#">CONTACTO</a></li>
+                <li><a href="registro.html" id="a_registro">REGISTRO</a></li>          
+            </ul>
+        </nav>
+    </div>
+</header>
+<body id="fondo">
+    <form action="" method="POST" class="form_register">
+        <div id="formRegistro">
+            <h3>Formulario de Registro</h3>
+            <input type="text" id="nombre" placeholder="Ingresa tu nombre completo">
+            <input type="text" id="usuario" placeholder="Ingresa tu usuario">
+            <input type="password" id="contraseña" placeholder="Ingresa password">
+            <input type="text" id="campoTelefono" placeholder="Ingresa Celular" onkeyup="this.value=validar_telefono(this.value)" >
+            <input type="text" id="campoDireccion" placeholder="Ingresa dirección">
+            <input type="email" id="correo" placeholder="Ingresa e-mail">
+            <input type="email" id="confCorreo" placeholder="ingresa e-mail">
+            <button id="Registerbutton" onclick="location.href='index.html'">REGISTRO</button>
+        </div>
+    </form>
+</body>
+</html>
