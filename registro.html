@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registro</title>
     <link rel="stylesheet" type="text/css" href="css/estilos.css">
-    <script src="js/form3.js"></script>
+    <!-- <script src="js/form3.js"></script> -->
+    <script src="js/registro2.js"></script>
 </head>
 <header>
     <div=id="nav_bar">
@@ -28,11 +29,12 @@
             <input type="text" id="nombre" placeholder="Ingresa tu nombre completo">
             <input type="text" id="usuario" placeholder="Ingresa tu usuario">
             <input type="password" id="contraseña" placeholder="Ingresa password">
-            <input type="text" id="campoTelefono" placeholder="Ingresa Celular" onkeyup="this.value=validar_telefono(this.value)" >
+            <input type="text" id="campoTelefono" placeholder="Ingresa Celular"  >
             <input type="text" id="campoDireccion" placeholder="Ingresa dirección">
             <input type="email" id="correo" placeholder="Ingresa e-mail">
             <input type="email" id="confCorreo" placeholder="ingresa e-mail">
-            <button id="Registerbutton" onclick="location.href='index.html'">REGISTRO</button>
+            <button id="Registerbutton" value="Capturar" onclick="capturar()" >REGISTRO</button>
+           
         </div>
     </form>
 </body>
